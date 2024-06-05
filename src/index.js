@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import * as styles from './style.module.css'
-import { Layout } from './Components/layout'
+import { Layout } from './Components/Layout/layout'
 
 const App = () => {
   return (

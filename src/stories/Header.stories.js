@@ -1,29 +1,13 @@
 import React from 'react'
 import { fn } from '@storybook/test'
-import { Layout } from '../Components/Layout/layout'
+import { Header } from '../Components/Header/index'
 
 const LayoutExample = () => {
-  return (
-    <Layout>
-      <p>
-        test content
-        <br />
-        test content
-        <br />
-        test content
-        <br />
-        test content
-        <br />
-        test content
-        <br />
-        test content
-      </p>
-    </Layout>
-  )
+  return <Header>test content</Header>
 }
 
 export default {
-  title: 'Example/Layout',
+  title: 'Example/Header',
   component: LayoutExample,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
@@ -42,6 +26,6 @@ export default {
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary = {
   args: {
-    label: 'Layout'
+    label: 'Header'
   }
 }
