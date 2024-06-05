@@ -1,12 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import * as styles from './style.module.css'
 import { Layout } from './Components/Layout/layout'
 
 const App = () => {
   return (
-    <div className={styles.header}>
+    <div>
       <Layout>
         <p>Hello from React !!!!</p>
         <div>Test</div>
