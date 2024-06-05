@@ -1,10 +1,30 @@
+import React from 'react'
 import { fn } from '@storybook/test'
-import { Button } from './Button'
+import { Layout } from '../Components/layout'
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
+const LayoutExample = () => {
+  return (
+    <Layout>
+      <p>
+        test content
+        <br />
+        test content
+        <br />
+        test content
+        <br />
+        test content
+        <br />
+        test content
+        <br />
+        test content
+      </p>
+    </Layout>
+  )
+}
+
 export default {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Example/Layout',
+  component: LayoutExample,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered'
@@ -22,35 +42,6 @@ export default {
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary = {
   args: {
-    primary: true,
-    label: 'Button'
-  }
-}
-
-export const Secondary = {
-  args: {
-    label: 'Button'
-  }
-}
-
-export const Large = {
-  args: {
-    size: 'large',
-    label: 'Button'
-  }
-}
-
-export const Small = {
-  args: {
-    size: 'small',
-    label: 'Button'
-  }
-}
-
-export const Warning = {
-  args: {
-    primary: true,
-    label: 'Delete now',
-    backgroundColor: 'red'
+    label: 'Layout'
   }
 }
