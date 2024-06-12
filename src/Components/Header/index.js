@@ -10,3 +10,19 @@ export const Header = ({ children }) => {
 Header.propTypes = {
   children: PropTypes.node
 }
+
+export const HeaderLeft = ({ children }) => {
+  return <div className={styles.left}>{children}</div>
+}
+
+HeaderLeft.propTypes = {
+  children: PropTypes.node
+}
+
+export const HeaderRight = ({ children }) => {
+  return <div className={styles.right}>{children}</div>
+}
+
+HeaderRight.propTypes = {
+  children: PropTypes.node
+}

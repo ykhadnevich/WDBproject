@@ -4,4 +4,13 @@
   color: #fff;
   display: flex;
   align-items: stretch;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
 }
