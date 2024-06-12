@@ -58,3 +58,8 @@ jobs:
           name: dist
           path: dist
 
+  publish:
+    needs: build
+    uses: kse-web-development-practice/example/.github/workflows/github-pages.yml@main
+
+
