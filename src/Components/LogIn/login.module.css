@@ -1,7 +1,7 @@
-.logo {
+.login {
   display: inline-flex;
   color: #ccc;
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 1rem;
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
