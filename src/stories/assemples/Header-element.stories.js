@@ -1,9 +1,9 @@
 import React from 'react'
 import { fn } from '@storybook/test'
-import { Header, HeaderLeft, HeaderRight } from '../Components/Header'
-import { Logo } from '../Components/Logo/logo'
-import { Counter } from '../Components/Counter/counter'
-import { LogIn } from '../Components/LogIn/login'
+import { Header, HeaderLeft, HeaderRight } from '../../Components/Header'
+import { Logo } from '../../Components/Logo/logo'
+import { Counter } from '../../Components/Counter/counter'
+import { LogIn } from '../../Components/LogIn/login'
 
 const LayoutExample = () => {
   return (
@@ -23,7 +23,6 @@ const LayoutExample = () => {
 export default {
   title: 'Assemble/Header',
   component: LayoutExample,
-  tags: ['autodocs'],
   args: { onClick: fn() }
 }
 
