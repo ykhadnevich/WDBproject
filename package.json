@@ -8,6 +8,7 @@
     "dev": "webpack serve --env dev",
     "lint:fix": "eslint ./src/* --fix",
     "lint": "eslint ./src/*",
+    "prettier": "prettier --write --ignore-unknown ./src/*",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepare": "husky"
@@ -64,11 +65,11 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run lint",
-      "prettier --write --ignore-unknown"
+      "npm run prettier",
+      "npm run lint"
     ],
     "*.css": [
-      "prettier --write --ignore-unknown"
+      "npm run prettier"
     ]
   }
 }
