@@ -16,7 +16,7 @@ export const Counter = ({ value, type, active }) => {
           [styles.counterLabelActive]: active
         })}
       >
-        Заявок
+        {type === 'total' ? 'Заявок' : 'Вирішено'}
       </span>
       <span
         className={classnames(styles.counterCount, {
@@ -30,7 +30,7 @@ export const Counter = ({ value, type, active }) => {
 }
 
 Counter.propTypes = {
-  type: PropTypes.oneOf(['total', 'new']).isRequired,
+  type: PropTypes.oneOf(['total', 'done']).isRequired,
   active: PropTypes.bool.isRequired,
   value: PropTypes.number.isRequired
 }
