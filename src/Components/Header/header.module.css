@@ -1,5 +1,7 @@
 .header {
   background: #2b2a2a;
-  padding: 10px;
+  padding: 0;
   color: #fff;
+  display: flex;
+  align-items: stretch;
 }

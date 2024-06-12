@@ -4,7 +4,11 @@ import * as styles from './login.module.css'
 import PropTypes from 'prop-types'
 
 export const LogIn = ({ isLogged }) => {
-  return <div className={styles.login}>{isLogged ? 'Log In' : 'Log Out'}</div>
+  return (
+    <div className={styles.login}>
+      <span>{isLogged ? 'Log In' : 'Log Out'}</span>
+    </div>
+  )
 }
 
 LogIn.propTypes = {

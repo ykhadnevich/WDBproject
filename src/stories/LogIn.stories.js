@@ -9,4 +9,4 @@ export default {
 }
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const HeaderComponent = {}
+export const Component = {}

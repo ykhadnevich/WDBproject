@@ -6,6 +6,7 @@
   display: inline-flex;
   background: #2b2a2a;
   gap: 0.4rem;
+  align-items: center;
 }
 
 .counterBlockActive {

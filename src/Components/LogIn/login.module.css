@@ -5,9 +5,10 @@
   padding: 1rem;
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
+  align-items: center;
 }
 
 .login:hover {
-  color: #000;
+  color: #fff;
   cursor: pointer;
 }
