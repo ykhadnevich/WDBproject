@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 
+const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
@@ -47,6 +48,9 @@ module.exports = (env) => {
       new ESLintPlugin({
         exclude: ['node_modules', 'dist'],
         context: path.resolve(__dirname, 'src')
+      }),
+      new webpack.DefinePlugin({
+        'process.env.BASE_URL': JSON.stringify(process.env.BASE_URL)
       })
     ],
     devtool: env.dev ? 'eval-source-map' : 'source-map',
