@@ -4,6 +4,11 @@ const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
+const dotenv = require('dotenv')
+
+const localEnv = dotenv.config().parsed
+
+console.log(localEnv)
 
 module.exports = (env) => {
   return {
@@ -50,7 +55,8 @@ module.exports = (env) => {
         context: path.resolve(__dirname, 'src')
       }),
       new webpack.DefinePlugin({
-        'process.env.BASE_URL': JSON.stringify(process.env.BASE_URL)
+        'process.env.BASE_URL': JSON.stringify(process.env.BASE_URL),
+        'process.env.MAP_KEY': JSON.stringify(localEnv.MAP_LEY)
       })
     ],
     devtool: env.dev ? 'eval-source-map' : 'source-map',

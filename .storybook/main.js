@@ -1,3 +1,8 @@
+const dotenv = require('dotenv')
+const webpack = require('webpack')
+
+const localEnv = dotenv.config().parsed
+
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -25,8 +30,14 @@ const config = {
                   }
                 }
               }
-            ],
+            ]
           }
+        ],
+        plugins: [
+          new webpack.DefinePlugin({
+            'process.env.BASE_URL': JSON.stringify(process.env.BASE_URL),
+            'process.env.MAP_KEY': JSON.stringify(localEnv.MAP_LEY)
+          })
         ]
       }
     }
