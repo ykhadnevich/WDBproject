@@ -8,8 +8,6 @@ const dotenv = require('dotenv')
 
 const localEnv = dotenv.config().parsed
 
-console.log(localEnv)
-
 module.exports = (env) => {
   return {
     entry: './src/index.js',
