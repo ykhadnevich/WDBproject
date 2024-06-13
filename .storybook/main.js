@@ -36,7 +36,9 @@ const config = {
         plugins: [
           new webpack.DefinePlugin({
             'process.env.BASE_URL': JSON.stringify(process.env.BASE_URL),
-            'process.env.MAP_KEY': JSON.stringify(localEnv.MAP_LEY)
+            'process.env.MAP_KEY': localEnv.MAP_KEY
+              ? JSON.stringify(localEnv.MAP_KEY)
+              : JSON.stringify(process.env.MAP_KEY)
           })
         ]
       }
