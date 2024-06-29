@@ -62,5 +62,3 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/main'
     uses: kse-web-development-practice/example/.github/workflows/github-pages.yml@main
-
-

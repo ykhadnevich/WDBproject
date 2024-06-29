@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import * as styles from './layout.module.css'
-
 export const Layout = ({ children }) => {
-  return <div className={styles.layout}>{children}</div>
+  return (
+    <div>
+      <header>
+        <h1>My App</h1>
+      </header>
+      <main>{children}</main>
+    </div>
+  )
 }
 
 Layout.propTypes = {

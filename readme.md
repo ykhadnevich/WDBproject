@@ -1,5 +1,3 @@
 # Dependencies
 
 - react@18
-
-
